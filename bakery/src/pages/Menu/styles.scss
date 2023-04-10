@@ -1,0 +1,98 @@
+.menu_page {
+  background-color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  &_nav {
+    width: 100vw;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+
+    &_items {
+      margin: 0 20px;
+      display: flex;
+      justify-content: space-between;
+
+      h6 {
+        font-size: 18px;
+        margin: 16px 0;
+      }
+    }
+  }
+
+  &-content {
+    padding: 64px 0;
+    &-heading {
+      font-size: 45px;
+      text-align: center;
+    }
+
+    &-subheading {
+      max-width: 750px;
+      margin: 100px auto 50px;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    &-seperator {
+      border-top: 2px solid #abb8c3;
+      width: 96px;
+      margin: 80px auto;
+    }
+
+    &-food {
+      &-heading {
+        font-size: 31px;
+        text-align: center;
+      }
+
+      &-items {
+        max-width: 1006px;
+        margin: 0 auto;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        h5 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &-footer {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 1140px) {
+    &-content-food-items {
+      margin: 0 170px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 800px) {
+    &-content-food-items {
+      margin: 0 70px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    .menu_page-content-subheading {
+      max-width: 350px;
+    }
+  }
+}

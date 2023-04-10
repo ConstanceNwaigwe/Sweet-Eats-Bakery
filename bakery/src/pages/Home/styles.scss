@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+
+.home_page {
+  background-color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  &_nav {
+    width: 100vw;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+
+    &_items {
+      margin: 0 20px;
+      display: flex;
+      justify-content: space-between;
+
+      h6 {
+        font-size: 18px;
+        margin: 16px 0;
+      }
+    }
+  }
+
+  &_intro,
+  &_discover,
+  &_book {
+    width: 100vw;
+    height: 100vh;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_items {
+      color: white;
+
+      &_separator {
+        border-top: 2px solid;
+        width: 96px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 60px;
+        padding: 40px 20px;
+        font-family: "Playfair Display";
+      }
+    }
+  }
+
+  &_intro {
+    background-image: url("https://sweeteatsbakery759562630.files.wordpress.com/2021/08/ui-i-bakery-celebrate-1.png");
+  }
+
+  &_discover {
+    background-image: url("https://sweeteatsbakery759562630.files.wordpress.com/2021/08/ui-i-bakery-cookies.png");
+    // background-image: url("https://sweeteatsbakery759562630.files.wordpress.com/2021/08/ui-i-bakery-main-header-1.png");
+  }
+
+  &_book {
+    background-image: url("https://lostinfood.co.uk/wp-content/uploads/2021/11/Chocolate-Truffles-Light-Recipe-Card-Closeup.jpeg");
+    // background-image: url("https://sweeteatsbakery759562630.files.wordpress.com/2021/08/ui-i-bakery-cookies.png");
+  }
+
+  &_about {
+    max-width: 750px;
+    margin: 100px auto;
+
+    h3 {
+      font-size: 36px;
+      text-align: center;
+      font-family: "Playfair Display";
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 2;
+    }
+  }
+
+  &_menu {
+    &_items {
+      &-description {
+        max-width: 750px;
+        margin: 100px auto 50px;
+        font-size: 18px;
+        line-height: 2;
+      }
+
+      &_separator {
+        border-top: 2px solid darkgray;
+        width: 96px;
+        margin: 0 auto;
+      }
+
+      h3 {
+        font-size: 36px;
+        text-align: center;
+        font-family: "Playfair Display";
+      }
+
+      &_desserts {
+        display: flex;
+        justify-content: space-between;
+        width: fit-content;
+        margin: 20px auto 80px;
+      }
+
+      &_dessert {
+        max-width: 280px;
+        margin: 0 10px;
+
+        p {
+          line-height: 2;
+        }
+      }
+
+      &_view_all {
+        width: fit-content;
+        margin: 0 auto 80px;
+        padding: 2px;
+        border: 4px solid black;
+
+        &_container {
+          padding: 10px;
+          border: 2px solid white;
+          background-color: black;
+          color: white;
+
+          h6 {
+            margin: 0;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    &_menu_items_desserts {
+      flex-direction: column;
+    }
+
+    &_intro,
+    &_discover,
+    &_book {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+}
