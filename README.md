@@ -13,13 +13,13 @@
 
 **_Description_**
 
-- A website that gives users programming advice and programming memes.
+- A website for a fake bakery. Users can view menu items and book a table.
 
 ---
 
 **_Getting Started_**
 - Git Clone branch
-- cd into advice-and-meme
+- cd into bakery
 - run npm start
 - View page in http://localhost:3000
 
@@ -28,17 +28,17 @@
 **_MVP:_**
 
 - [x] Navbar with page links
-- [x] Advice page UI
-- [x] Advice page logic
-- [x] Meme page UI
-- [x] Meme page logic
+- [x] Home page UI
+- [x] Booking form logic
+- [x] Menu page UI
+- [x] Footer with bakery info
 
 ---
 
 **_Technologies Used_**
 
 - React
-- CSS
+- SCSS
 - JavaScript
 
 ---
@@ -52,7 +52,7 @@
 - [x] Tablet version
 - [x] Mobile version
 - [x] Media Queries
-- [ ] Add home page
+- [ ] Add better form validation
 
 
 
@@ -63,7 +63,7 @@
 **_Credits_**
 
 #### Images: [Google image](https://google.com)
-#### Advice quotes: [Medium](https://medium.com/swlh/40-tips-that-will-change-your-coding-skills-forever-bf9d6b936ccc)
+
 
 
 
