@@ -1,5 +1,8 @@
 # Sweet-Eats-Bakery
 
+![image](https://user-images.githubusercontent.com/46114181/230997837-858ce00d-c4fb-4819-a926-1664a52f514a.png)
+
+
 ### By:
 
 ### Constance N.
